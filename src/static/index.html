@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Node.js exercise</title>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/collapsible.css" />
+	</head>
+	<body>
+		<div class="content-wrapper">
+		<h1>Node.js/Express Workshop</h1>
+		<h2>Introduction</h2>
+		<p>This exercise is part of WBS Coding School Full Stack Web/App Development Course</p>
+		<div class="collapsible">
+			<input id="c-endpoints" class="c-toggle" type="checkbox" checked>
+			<label for="c-endpoints" class="c-toggle-label">Endpoints</label>
+			<div class="collapsible-content">
+				<div class="content-inner">
+					<ul>
+						<li>PATH /users</li>
+						<ul>
+							<li>
+								<span class="element-description">Defined in usersRoutes.js</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /users/</span>
+								<span class="element-description">Displays all users</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /users/:id</span>
+								<span class="element-description">Gets a single user</span>
+							</li>
+							<li>
+								<span class="element-intro">POST /users/</span>
+								<span class="element-description">Creates a single user (fields 'firstname' and 'lastname' are mandatory)</span>
+							</li>
+							<li>
+								<span class="element-intro">PUT /users/:id</span>
+								<span class="element-description">Updates a single user (fields 'firstname' and 'lastname' are mandatory)</span>
+							</li>
+							<li>
+								<span class="element-intro">DELETE /users/:id</span>
+								<span class="element-description">Deletes a single given user</span>
+							</li>
+						</ul>
+						<li>PATH /</li>
+						<ul>
+							<li>
+								<span class="element-intro">GET /</span>
+								<span class="element-description">Displays static html website explanation (this)</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /static</span>
+								<span class="element-description">Static folder for html intro</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /styles</span>
+								<span class="element-description">Static folder for css assets</span>
+							</li>
+						</ul>
+						<li>PATH /demo/</li>
+						<ul>
+							<li>
+								<span class="element-description">Defined in seedRoutes.js</span>
+							</li>
+							<li>
+								<span class="element-intro">GET /seed/recreate</span>
+								<span class="element-description">Allows to seed the table with sample data</span>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
